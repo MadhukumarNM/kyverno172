@@ -7754,7 +7754,7 @@ metadata:
   name: kyverno
   namespace: kyverno
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: kyverno
