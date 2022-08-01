@@ -7651,6 +7651,19 @@ metadata:
   namespace: kyverno
 ---
 apiVersion: v1
+kind: ServiceAccount
+metadata:
+  labels:
+    app: kyverno
+    app.kubernetes.io/component: kyverno
+    app.kubernetes.io/instance: kyverno
+    app.kubernetes.io/name: kyverno
+    app.kubernetes.io/part-of: kyverno
+    app.kubernetes.io/version: v1.7.2
+  name: kyverno-service-account
+  namespace: kyverno
+---
+apiVersion: v1
 data:
   metricsRefreshInterval: 24h
   namespaces: '{"exclude":[],"include":[]}'
